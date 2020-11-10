@@ -103,12 +103,12 @@ void reconnect() {
   // Loop until we're reconnected
   while (!mqttclient.connected()) {
     Serial.println("Attempting MQTT connection...");
-    if (mqttclient.connect("arduinoClient", "rbmqdev", "6dHaExiKmW7LMr1FNPFx")) {
+    if (mqttclient.connect("arduinoClient", "rbmqqtdev", "s12IRNF3jUDbpq")) {
       Serial.print("Connected!");
     } else {
       Serial.print("Failed!");
       Serial.print(mqttclient.state());
-      Serial.println("trying again in 10 seconds");
+      Serial.println("trying again in 10 seconds");s
       delay(10000);
     }
   }
